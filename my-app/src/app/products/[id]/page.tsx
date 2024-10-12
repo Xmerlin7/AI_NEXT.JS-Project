@@ -1,9 +1,7 @@
-export default function ProductInfo() {
-    return (
-      <>
-        <h1>Produc Info</h1>
-
-      </>
-    );
-  }
-  
+export default function ProductInfo({ params }: { params: { id: string } }) {
+  return (
+    <>
+      <h1>Produc Info {params.id}</h1>
+    </>
+  );
+}
